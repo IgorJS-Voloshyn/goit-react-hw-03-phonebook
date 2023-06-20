@@ -1,0 +1,23 @@
+.label {
+    display: flex;
+    gap: 5px;
+}
+
+.input {
+    border-radius: 3px;
+    border-color: solid 3px grey;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li::before{
+    content: "\2022";
+    color: blue;
+    font-weight: bold;
+    font-size: larger;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

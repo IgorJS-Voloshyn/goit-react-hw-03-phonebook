@@ -1,0 +1,16 @@
+.list{
+    list-style: none;
+    line-height: 2.5;
+}
+
+.list_item{
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+max-height: 30px;
+background-color: #add8e6;
+border: none;
+border-radius:  5px;
+}

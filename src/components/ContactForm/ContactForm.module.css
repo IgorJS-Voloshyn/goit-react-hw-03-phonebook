@@ -1,0 +1,25 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: solid 1px black;
+    max-width: 500px;
+    padding: 40px;
+}
+
+.label{
+display: flex;  
+gap: 5px;
+}
+
+.input{
+    border-radius: 3px;
+    border-color: solid 3px grey;
+}
+
+.btn{
+    max-width: 150px;
+    background-color: #add8e6;
+    border: none;
+    border-radius: 5px;
+}
