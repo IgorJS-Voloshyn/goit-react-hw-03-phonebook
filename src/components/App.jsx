@@ -17,6 +17,13 @@ export class App extends Component {
       this.setState({ contacts: parsedContacts });
     }
   }
+
+  componentDidUpdate(prevState) {
+    if (prevState.contacts !== this.state.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
+
   formSubmitHundler = data => {
     let nameArray = [];
     nameArray = this.state.contacts.map(value => value.name);
@@ -52,11 +59,6 @@ export class App extends Component {
     });
   };
 
-  componentDidUpdate(prevState) {
-    if (prevState.contacts !== this.state.contacts) {
-      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
-    }
-  }
   render() {
     return (
       <div className={css.container}>
